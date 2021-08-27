@@ -1,0 +1,73 @@
+    .main {
+        // display: flex;
+        padding-bottom: 99px;
+    }
+    
+    .main__content {
+        margin-left: 100px;
+        margin-right: 92px;
+        max-width: 440px;
+        width: 100%;
+        padding-top: 28px;
+    }
+    
+    .main__content-title {
+        color: #FFFFFF;
+        font-size: 36px;
+        line-height: 48px;
+        font-family: 'OpenSans', sans-serif;
+        font-weight: bold;
+        margin-top: 0;
+    }
+    
+    .main__content-items {
+        position: relative;
+        list-style: none;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .main__content-item {
+        padding-bottom: 15px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 18px;
+            height: 14px;
+            background-image: url("../img/check.png");
+            background-repeat: no-repeat;
+        }
+        &:last-child::before {
+            content: "";
+            position: absolute;
+            top: 65px;
+            left: 0;
+            width: 18px;
+            height: 14px;
+            background-image: url("../img/check.png");
+            background-repeat: no-repeat;
+        }
+    }
+    
+    .main__images {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        margin-top: 32px;
+    }
+    
+    .main__images-iphone {
+        max-width: 245px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+    }
+    
+    .main__images-macbook {
+        max-width: 1063px;
+        height: auto;
+        justify-self: flex-end
+    }
