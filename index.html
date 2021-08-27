@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataDuck-form-test</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <hr class="header__line">
+        <button class="header__btn-login">Войти</button>
+    </header>
+
+    <main class="main">
+
+        <div class="main__content">
+            <h1 class="main__content-title">Начните тороговать прямо сейчас</h1>
+
+            <ul class="main__content-items">
+                <li class="main__content-item">Нет спреда — торгуйте с прозрачными и точными котировками</li>
+                <li class="main__content-item">Достаточно депозита в $10, чтобы начать торговать</li>
+            </ul>
+
+            <form class="form" action="#" method="post">
+
+                <div class="form__item">
+                    <input class="form__item-input" type="text" name="email" id="email" required>
+                    <label class="form__item-label" for="email">Ваш e-mail</label>
+                </div>
+
+                <div class="form__item">
+                    <input class="form__item-input" type="password" name="password" id="password" required>
+                    <label class="form__item-label" for="password">Придумайте пароль</label>
+                </div>
+
+                <div class="form__error-password on off">
+                    Неверный пароль
+                </div>
+
+                <div class="form__radio">
+                    <p class="form__text">Валюта для ввода и <br> вывода средств</p>
+
+                    <div class="form__radio-btn">
+
+                        <div class="form_radio-btn-item">
+                            <input id="radio-1" type="radio" name="radio" value="1" checked>
+                            <label for="radio-1">Р</label>
+                        </div>
+
+                        <div class="form_radio-btn-item">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2">S</label>
+                        </div>
+
+                        <div class="form_radio-btn-item">
+                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <label for="radio-3">E</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__checkbox">
+                    <input class="form__checkbox-custom" type="checkbox" id="consent" name="consent" value="yes">
+                    <label for="consent">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</label>
+                </div>
+
+                <div class="form__error-attention on off">
+                    <p>Учётная запись с указанным e-mail уже существует</p>
+                    <p>Слишком короткий пароль! Используйте не менее 4 сымволов.</p>
+                </div>
+
+                <input class="form__btn" type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
