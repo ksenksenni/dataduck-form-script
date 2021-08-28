@@ -7,14 +7,12 @@ body {
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-position: right;
+    @include for-dasktop-large {
+        background-image: url(../img/bg-all-macbook.png);
+        background-position: 80% 50%;
+    }
+    @include for-tablet-large {
+        max-width: 100%;
+        background-image: none;
+    }
 }
-
-// @include for-tablet-large {
-//     max-width: 960px;
-// }
-// @include for-tablet {
-//     max-width: 720px;
-// }
-// @include for-mobile {
-//     max-width: 100%;
-// }

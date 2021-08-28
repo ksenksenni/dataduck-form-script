@@ -1,6 +1,9 @@
 .header {
     display: flex;
     padding: 0 100px;
+    @include for-mobile {
+        flex-direction: column;
+    }
 }
 
 .header__line {
@@ -9,6 +12,10 @@
     background-color: #FFFFFF;
     margin-left: 0;
     margin-top: 28px;
+    @include for-mobile {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .header__btn-login {
@@ -43,5 +50,12 @@
     &:active {
         background-color: #0b172a;
         color: #7A8F99;
+    }
+    @include for-mobile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include for-small-mobile {
+        text-align: center;
     }
 }
