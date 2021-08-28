@@ -47,6 +47,46 @@
     transform: translateY(-10px);
 }
 
+.form-input {
+    position: relative;
+}
+
+.form__error-password {
+    position: absolute;
+    top: -130px;
+    left: 70px;
+    border: 1px solid map-get($colors, 'red');
+    border-radius: 10px;
+    background-color: map-get($colors, 'red');
+    padding: 8px 16px;
+    position: relative;
+    max-width: 280px;
+    color: map-get($colors, 'white');
+    text-align: center;
+    @include for-small-mobile {
+        left: 40px;
+        width: 70%;
+    }
+}
+
+.form__error-password::before,
+.form__error-password::after {
+    content: '';
+    position: absolute;
+    left: 140px;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid map-get($colors, 'red');
+    @include for-small-mobile {
+        left: 120px;
+    }
+}
+
+.form__error-password::after {
+    border-top: 10px solid map-get($colors, 'red');
+    bottom: -19px;
+}
+
 .form__btn {
     margin-top: 16px;
     width: 100%;
@@ -74,6 +114,14 @@
 }
 
 .form__error-attention {
+    @include for-small-mobile {
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.form__error-attention-text {
     position: relative;
     color: map-get($colors, 'white');
     font-size: 16px;

@@ -25,19 +25,21 @@
         </ul>
 
         <form class="form" action="#" method="post">
+            <div class="form-input">
 
-            <div class="form__item">
-                <input class="form__item-input" type="text" name="email" id="email" required>
-                <label class="form__item-label" for="email">Ваш e-mail</label>
-            </div>
+                <div class="form__item">
+                    <input class="form__item-input" type="text" name="email" id="email" required>
+                    <label class="form__item-label" for="email">Ваш e-mail</label>
+                </div>
 
-            <div class="form__item">
-                <input class="form__item-input" type="password" name="password" id="password" required>
-                <label class="form__item-label" for="password">Придумайте пароль</label>
-            </div>
+                <div class="form__item form__item-password">
+                    <input class="form__item-input" type="password" name="password" id="password" required>
+                    <label class="form__item-label" for="password">Придумайте пароль</label>
+                </div>
 
-            <div class="form__error-password on off">
-                Неверный пароль
+                <div class="form__error-password on">
+                    Неверный пароль
+                </div>
             </div>
 
             <div class="form__radio">
@@ -67,9 +69,9 @@
                 <label for="consent">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</label>
             </div>
 
-            <div>
-                <p class="form__error-attention form__error-attention-email on off">Учётная запись с указанным e-mail уже существует</p>
-                <p class="form__error-attention form__error-attention-password on off">Слишком короткий пароль! Используйте не менее 4 символов.</p>
+            <div class="form__error-attention">
+                <p class="form__error-attention-text form__error-attention-email on off">Учётная запись с указанным e-mail уже существует</p>
+                <p class="form__error-attention-text form__error-attention-password on off">Слишком короткий пароль! Используйте не менее 4 символов.</p>
             </div>
 
             <input class="form__btn" type="submit" value="Зарегистрироваться">
