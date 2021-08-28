@@ -16,7 +16,7 @@
     }
     
     .main__title {
-        color: #FFFFFF;
+        color: map-get($colors, 'white');
         font-size: 36px;
         line-height: 48px;
         font-family: 'OpenSans', sans-serif;

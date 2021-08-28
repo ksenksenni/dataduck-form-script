@@ -9,7 +9,7 @@
 .header__line {
     width: 140px;
     height: 16px;
-    background-color: #FFFFFF;
+    background-color: map-get($colors, 'white');
     margin-left: 0;
     margin-top: 28px;
     @include for-mobile {
@@ -29,9 +29,9 @@
     padding-right: 18.7px;
     padding-bottom: 8px;
     padding-left: 48.3px;
-    border: 1px solid #D8E1E6;
-    background-color: rgb(11, 23, 42);
-    color: #FFFFFF;
+    border: 1px solid map-get($colors, 'white');
+    background-color: map-get($colors, 'blue');
+    color: map-get($colors, 'white');
     border-radius: 4px;
     margin-top: 16px;
     &::before {
@@ -45,11 +45,11 @@
         background-repeat: no-repeat;
     }
     &:hover {
-        background-color: rgb(33, 45, 62);
+        background-color: map-get($colors, 'grey-blue');
     }
     &:active {
-        background-color: #0b172a;
-        color: #7A8F99;
+        background-color: map-get($colors, 'blue');
+        color: map-get($colors, 'light-blue');
     }
     @include for-mobile {
         margin-left: auto;

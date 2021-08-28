@@ -20,8 +20,8 @@
         height: 32px;
         flex-shrink: 0;
         flex-grow: 0;
-        border: 1px solid #212d3e;
-        background-color: #212d3e;
+        border: 1px solid map-get($colors, 'grey-blue');
+        background-color: map-get($colors, 'grey-blue');
         border-radius: 4px;
         margin-right: 20px;
         margin-left: 0;
@@ -36,5 +36,5 @@
 }
 
 .form__checkbox-custom:not(:disabled):not(:checked)+label:hover::before {
-    background-color: #212d3e;
+    background-color: map-get($colors, 'grey-blue');
 }

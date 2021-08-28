@@ -1,9 +1,10 @@
 body {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: rgb(11, 23, 42);
+    background-color: map-get($colors, 'blue');
+    ;
     font-family: 'San Francisco', sans-serif;
-    color: #7A8F99;
+    color: map-get($colors, 'light-blue');
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-position: right;

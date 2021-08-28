@@ -18,17 +18,17 @@
     box-sizing: border-box;
     margin: 10px 0;
     padding: 32px 24px 8px 24px;
-    border: 1px solid rgb(33, 45, 62);
-    color: #fff;
+    border: 1px solid map-get($colors, 'grey-blue');
+    color: map-get($colors, 'white');
     border-radius: 4px;
-    background-color: rgb(33, 45, 62);
+    background-color: map-get($colors, 'grey-blue');
     line-height: 24px;
 }
 
 .form__item-input:focus {
     outline: none;
-    border: 1px solid #1C945D;
-    color: #fff;
+    border: 1px solid map-get($colors, 'green');
+    color: map-get($colors, 'white');
 }
 
 .form__item-label {
@@ -36,7 +36,7 @@
     top: 30px;
     left: 24px;
     display: block;
-    color: #7A8F99;
+    color: map-get($colors, 'light-blue');
     transition: 0.5s;
     cursor: text;
 }
@@ -51,20 +51,20 @@
     margin-top: 32px;
     width: 100%;
     padding: 16px;
-    color: #fff;
+    color: map-get($colors, 'white');
     font-family: 'OpenSans', sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
-    background-color: #1C945D;
-    border: 1px solid #1C945D;
+    background-color: map-get($colors, 'green');
+    border: 1px solid map-get($colors, 'green');
     border-radius: 4px;
     &:hover {
-        background-color: rgb(33, 45, 62);
+        background-color: map-get($colors, 'grey-blue');
     }
     &:active {
-        background-color: #0b172a;
-        color: #7A8F99;
+        background-color: map-get($colors, 'blue');
+        color: map-get($colors, 'light-blue');
     }
     @include for-small-mobile {
         width: 90%;
