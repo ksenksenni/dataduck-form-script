@@ -23,12 +23,13 @@
     .form__radio-btn {
         display: inline-block;
         overflow: hidden;
+        border-radius: 4px;
         @include for-small-mobile {
             margin: 0 auto;
         }
     }
     
-    .form_radio-btn-item {
+    .form__radio-btn-item {
         display: inline-block;
         float: left;
     }
