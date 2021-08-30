@@ -13,7 +13,7 @@
 
     <header class="header">
         <hr class="header__line">
-        <button class="header__btn-login">Войти</button>
+        <a href="#" class="header__btn-login">Войти</a>
     </header>
 
     <main class="main">
@@ -37,7 +37,7 @@
                     <label class="form__item-label" for="password">Придумайте пароль</label>
                 </div>
 
-                <div class="form__error-password on">
+                <div class="form__error-password off">
                     Неверный пароль
                 </div>
             </div>
@@ -65,18 +65,20 @@
             </div>
 
             <div class="form__checkbox">
-                <input class="form__checkbox-custom" type="checkbox" id="consent" name="consent" value="yes">
+                <input class="form__checkbox-custom" type="checkbox" id="consent" name="consent" value="yes" required>
                 <label for="consent">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</label>
             </div>
 
             <div class="form__error-attention">
-                <p class="form__error-attention-text form__error-attention-email on off">Учётная запись с указанным e-mail уже существует</p>
-                <p class="form__error-attention-text form__error-attention-password on off">Слишком короткий пароль! Используйте не менее 4 символов.</p>
+                <p class="form__error-attention-text form__error-attention-email off">Учётная запись с указанным e-mail уже существует</p>
+                <p class="form__error-attention-text form__error-attention-password off">Слишком короткий пароль! Используйте не менее 4 символов.</p>
             </div>
 
             <input class="form__btn" type="submit" value="Зарегистрироваться">
+
         </form>
     </main>
+    <script src="form.js"></script>
 </body>
 
 </html>

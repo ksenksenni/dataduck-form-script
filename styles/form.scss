@@ -47,6 +47,10 @@
     transform: translateY(-10px);
 }
 
+.error {
+    border: 1px solid map-get($colors, 'red');
+}
+
 .form-input {
     position: relative;
 }
@@ -55,6 +59,7 @@
     position: absolute;
     top: -130px;
     left: 70px;
+    margin-bottom: -40px;
     border: 1px solid map-get($colors, 'red');
     border-radius: 10px;
     background-color: map-get($colors, 'red');
@@ -143,10 +148,6 @@
         background-image: url("../img/attention.png");
         background-repeat: no-repeat;
     }
-}
-
-.on {
-    display: block;
 }
 
 .off {

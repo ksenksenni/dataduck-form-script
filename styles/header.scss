@@ -34,6 +34,7 @@
     color: map-get($colors, 'white');
     border-radius: 4px;
     margin-top: 16px;
+    text-decoration: none;
     &::before {
         content: "";
         position: absolute;
