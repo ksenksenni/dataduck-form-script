@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    justify-content: space-between;
     padding: 0 100px;
     @include for-mobile {
         flex-direction: column;

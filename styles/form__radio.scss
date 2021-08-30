@@ -1,76 +1,85 @@
-    .form__radio {
-        display: flex;
-        margin-top: 16px;
-        justify-content: space-between;
-        margin-bottom: 24px;
-        @include for-small-mobile {
-            flex-direction: column;
-        }
+.form__radio {
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    @include for-small-mobile {
+        flex-direction: column;
     }
-    
-    .form__text {
-        font-size: 12px;
-        line-height: 16px;
-        margin: 0;
-        width: 128px;
-        @include for-small-mobile {
-            text-align: center;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-    }
-    
-    .form__radio-btn {
-        display: inline-block;
-        overflow: hidden;
-        border-radius: 4px;
-        @include for-small-mobile {
-            margin: 0 auto;
-        }
-    }
-    
-    .form__radio-btn-item {
-        display: inline-block;
-        float: left;
-    }
-    
-    .form__radio-btn input[type=radio] {
-        display: none;
-    }
-    
-    .form__radio-btn label {
-        display: inline-block;
-        cursor: pointer;
-        padding-left: 40px;
-        padding-right: 40px;
-        line-height: 34px;
-        border: 1px solid map-get($colors, 'grey-blue');
-        border-right: none;
-        user-select: none;
+}
+
+.form__text {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    width: 128px;
+    @include for-small-mobile {
         text-align: center;
-        background-color: map-get($colors, 'grey-blue');
+        width: 100%;
+        margin-bottom: 15px;
     }
-    
-    .form__radio-btn .form_radio-btn-item:first-child label {
-        border-radius: 6px 0 0 6px;
+}
+
+.form__radio-btn {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 4px;
+    background: map-get($colors, 'grey-blue');
+    @include for-small-mobile {
+        margin: 0 auto;
     }
-    
-    .form__radio-btn .form_radio-btn-item:last-child label {
-        border-radius: 0 6px 6px 0;
-        border-right: 1px solid map-get($colors, 'grey-blue');
-    }
-    
-    .form__radio-btn input[type=radio]:checked+label {
+}
+
+.form__radio-btn-item {
+    display: inline-block;
+    float: left;
+    &:not(:first-child)::before {
+        content: " ";
         background: map-get($colors, 'blue');
-        border: 1px solid map-get($colors, 'green');
-        color: map-get($colors, 'white');
+        width: 1px;
+        height: 25px;
+        float: left;
+        margin-top: 5px;
     }
-    
-    .form__radio-btn label:hover {
-        color: map-get($colors, 'white');
-    }
-    
-    .form__radio-btn input[type=radio]:disabled+label {
-        background: map-get($colors, 'white');
-        color: map-get($colors, 'light-blue');
-    }
+}
+
+.form__radio-btn input[type=radio] {
+    display: none;
+}
+
+.form__radio-btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 34px;
+    border: 1px solid map-get($colors, 'grey-blue');
+    border-right: none;
+    user-select: none;
+    text-align: center;
+    background-color: map-get($colors, 'grey-blue');
+}
+
+.form__radio-btn .form_radio-btn-item:first-child label {
+    border-radius: 6px 0 0 6px;
+}
+
+.form__radio-btn .form_radio-btn-item:last-child label {
+    border-radius: 0 6px 6px 0;
+    border-right: 1px solid map-get($colors, 'grey-blue');
+}
+
+.form__radio-btn input[type=radio]:checked+label {
+    background: map-get($colors, 'blue');
+    border: 1px solid map-get($colors, 'green');
+    color: map-get($colors, 'white');
+}
+
+.form__radio-btn label:hover {
+    color: map-get($colors, 'white');
+}
+
+.form__radio-btn input[type=radio]:disabled+label {
+    background: map-get($colors, 'white');
+    color: map-get($colors, 'light-blue');
+}
